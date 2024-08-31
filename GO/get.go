@@ -1,20 +1,15 @@
 package main
 
 import (
-    "github.com/gin-gonic/gin"
+    // "github.com/gin-gonic/gin"
+    "fmt"
 )
 
 func main() {
     // Create a new Gin router instance
-    router := gin.Default()
+    //i:= 0
+ for i := 0; i < 10; i++ {
+     fmt.Println(i)
+ }
 
-    // Define a simple route
-    router.GET("/", func(c *gin.Context) {
-        c.JSON(200, gin.H{
-            "message": "Hello, world!",
-        })
-    })
-
-    // Start the server on port 8080
-    router.Run(":8080")
 }

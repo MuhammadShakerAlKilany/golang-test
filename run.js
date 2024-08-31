@@ -1,7 +1,7 @@
 // const { exec  } = require('child_process');
 // exec('get.exe');
 const spawn = require('child_process').spawn
-const ls    = spawn('l/get');
+const ls    = spawn('get');
 
 ls.stdout.on('data', function (data) {
   console.log('stdout: ' + data.toString());
