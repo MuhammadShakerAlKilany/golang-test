@@ -2,7 +2,7 @@
 // exec('get.exe');
 const path = require('path');
 const spawn = require('child_process').spawn
-const ls    = spawn(path.join(__dirname, 'get.exe'),[], { stdio: 'inherit' });
+const ls    = spawn(path.join(__dirname, 'get.exe'),[], { stdio: 'inherit' ,shell: true});
 
 // ls.stdout.on('data', function (data) {
 //   console.log('stdout: ' + data.toString());
